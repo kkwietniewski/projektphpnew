@@ -36,17 +36,9 @@
     <div class="card mb-4 d-flex align-items-center justify-content-cetner">
 
                 <h5 class="card-title p-2 pt-3 ">Informacje o zamówieniu</h5>
-            <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Login:</span>SzeldonKuper</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Imię:</span>Sheldon</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Nazwisko:</span>Cooper</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Email:</span>szeldon@wp.pl</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Ulica:</span>Fizyczna</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Nr domu</span>5</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Kod pocztowy:</span>00-000</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Miasto:</span>Amerykańskie</span></li>
-                
-            </ul>
+            <?php
+                require_once './scripts/orderInfo.php';
+            ?>
         </div>
     </div>
     <div class="col-3 ">
@@ -92,23 +84,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr> 
-                            <td scope="row">1</td>
-                            <td scope="row">1456</td>
-                            <td scope="col"><img class="img-fluid" style="width:40px; height:40px;" src="images/a.jpg"></td>
-                            <td scope="row">GIT1</td>
-                            <td scope="row">Gitara akustyczna</td>
-                            <td scope="row">Gitary akustyczne</td>
-                            <td scope="row">Fender</td>
-                            <td scope="row">5</td>
-                            <td scope="row">2000</td>
-                            <td scope="row">10000</td>
-                            <td scope="row">15kg</td>
-                            <td scope="row" class="btn-group">
-                                <a class="btn btn-outline-secondary btn-sm" href="./edycjaProduktu.php">Podgląd</a>
-                            </td>
-
-                        </tr>
+                        <?php
+                            require_once './scripts/orderedProducts.php';
+                        ?>
                         </tbody>
                         <table>
         </div>
