@@ -30,11 +30,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scripts/logout.php">Wyloguj Się</a>
+                        </li>
                         </div>
                         </div> 
                     </ul>
                 </nav>
+<?php
 
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
         
   
 
