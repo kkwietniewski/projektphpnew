@@ -19,7 +19,8 @@
 </head>
 
 <body>
-	
+<a href="scripts/registration.php">Rejestracja - załóż darmowe konto!</a>
+	<br /><br />
 	Zaloguj Się<br /><br />
 	
 	<form action="scripts/logIn.php" method="post">
