@@ -18,10 +18,12 @@
     <td scope="row">$row[cena]</td>
     <td scope="row">$row[waga]</td>
     <td scope="row" class="btn-group">
-        <a class="btn btn-outline-secondary btn-sm" href="./edycjaProduktu.php">Podgląd</a>
+    <form action="./edycjaProduktu.php" method="post">
+        <button class="btn btn-outline-info btn-sm">Edytuj</button>
     </td>
-
+    <input class="rowid" name="productId" value="$row[id]">
     </tr>
+    </form>
 PRODUCTS;
 }
 ?>
