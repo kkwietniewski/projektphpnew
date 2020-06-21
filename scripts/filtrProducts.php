@@ -4,6 +4,7 @@
     $sortType = $_POST['sort'];
     $sortKategory=$_POST['sortKat'];
     $sortAvailability=$_POST['sortAvail']; 
+    $sortLabel=$_POST['lbl'];
 
     $sql="SELECT kategoria_id, kategoria FROM kategoria"; 
     $result = mysqli_query($conn, $sql);
@@ -59,6 +60,18 @@
             $_SESSION['sortAvailability']="0"; 
             break;
     }
-    
+    switch ($sortLabel) {
+        case 'bestseller':
+            $_SESSION['sortLabel']="Bestseller"; 
+            break;
+         case 'nowosc':
+            $_SESSION['sortLabel']="nowosc"; 
+            break;
+         case 'promocja':
+            $_SESSION['sortLabel']="Promocja"; 
+            break;
+
+    }
+
     header('location: ../asortyment.php');
 ?>

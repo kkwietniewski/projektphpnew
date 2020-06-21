@@ -91,7 +91,9 @@ button{
                 </div>
 
                 <div class="md-form active-cyan" style="width:300px">
-                    <input class="form-control" type="text" placeholder="Wyszukaj produkt..." aria-label="Search">
+                <form action="./scripts/searchProduct.php" method="post">
+                    <input class="form-control" type="text" placeholder="Wyszukaj produkt..." aria-label="Search" name="search" type="submit">
+                </form>
                 </div>
 
             </div>
@@ -161,6 +163,14 @@ button{
         <div>
                  <?php
                     require_once './scripts/listOfProducts.php';
+                    if (isset($_SESSION['error'])) {
+                        echo <<<ERROR
+                        <div class="container-fluid">
+                            <div class="alert alert-danger">$_SESSION[error]</div>
+                        </div>
+ERROR;
+                unset($_SESSION['error']) ;
+                    }
                 ?>
         </div>
     </div>
