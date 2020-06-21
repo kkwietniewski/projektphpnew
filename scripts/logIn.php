@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: ../index.php');
+		header('Location: ../logowanie.php');
 		exit();
 	}
 
@@ -45,7 +45,7 @@
 				
 				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
 				
-				header('Location: ../index.php');
+				header('Location: ../logowanie.php');
 				
 				
 			}

@@ -40,7 +40,7 @@
 	
 	Dziękujemy za rejestrację w serwisie! Możesz już zalogować się na swoje konto!<br /><br />
 	
-	<a href="index.php">Zaloguj się na swoje konto!</a>
+	<a href="logowanie.php">Zaloguj się na swoje konto!</a>
 	<br /><br />
 
 </body>
