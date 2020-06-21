@@ -67,7 +67,7 @@
                 <h5 class="display-5 my-4">Najpopularniejsze produkty</h5>
                 <div class=" d-flex justify-content-between">
                     <?php
-                        // require_once './scripts/popularProduct.php';
+                        require_once './scripts/popularProduct.php';
                     ?>
 
                 </div>  

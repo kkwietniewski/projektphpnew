@@ -91,7 +91,9 @@ button{
                 </div>
 
                 <div class="md-form active-cyan" style="width:300px">
-                    <input class="form-control" type="text" placeholder="Wyszukaj produkt..." aria-label="Search">
+                <form action="./scripts/searchProduct.php" method="post">
+                    <input class="form-control" type="text" placeholder="Wyszukaj produkt..." aria-label="Search" name="search" type="submit">
+                </form>
                 </div>
 
             </div>
@@ -132,11 +134,11 @@ button{
                 </select>
 
                 <!-- Checkboxy z kategoriami -->
-                <input type="radio" id="bestseller" value="bestseller" name="lbl">
+                <input type="radio" id="bestseller" value="bestseller">
                 <label for="bestseller" class="mr-2">Bestseller</label>
-                <input type="radio" id="nowosc" value="nowosc" name="lbl">
+                <input type="radio" id="nowosc" value="Nowość">
                 <label for="nowosc" class="mr-2">Nowość</label>
-                <input type="radio" id="promocja" value="promocja" name="lbl">
+                <input type="radio" id="promocja" value="promocja">
                 <label for="promocja" class="mr-2">Promocja</label>
 
                 <button class="btn btn-sm btn-outline-secondary ml-4" type="submit">Filtruj</button>

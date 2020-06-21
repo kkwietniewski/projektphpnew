@@ -121,7 +121,13 @@
             
         }
         else {
-            $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent, znacznik FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id";
+            if (isset($_SESSION['search'])) {
+                $search= $_SESSION['search'];
+                $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent, znacznik FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE nazwa = '$search'";
+            }else{
+                $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent, znacznik FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id";
+
+            }
         }
            
 
