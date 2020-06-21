@@ -58,7 +58,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text">Symbol</span>
                     </div>
-                    <input type="text" class="form-control" value="$symbol" name="symbol" id="symbol">
+                    <input type="text" class="form-control" value="$symbol" name="symbol" id="symbol" disabled>
                 </div>
             </div>
         </div>
