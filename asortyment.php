@@ -163,6 +163,14 @@ button{
         <div>
                  <?php
                     require_once './scripts/listOfProducts.php';
+                    if (isset($_SESSION['error'])) {
+                        echo <<<ERROR
+                        <div class="container-fluid">
+                            <div class="alert alert-danger">$_SESSION[error]</div>
+                        </div>
+ERROR;
+                unset($_SESSION['error']) ;
+                    }
                 ?>
         </div>
     </div>
