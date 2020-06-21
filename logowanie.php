@@ -20,7 +20,7 @@
 
 <body>
 	
-	Tylko martwi ujrzeli koniec wojny - Platon<br /><br />
+	Zaloguj Się<br /><br />
 	
 	<form action="scripts/logIn.php" method="post">
 	
