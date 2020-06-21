@@ -120,7 +120,7 @@ button{
                     <select class="mr-2" name="sortKat">
                         <option value="0">Wszystkie</option>
                         <?php
-                            require_once './scripts/sortKategory.php' ;
+                            require_once './scripts/sortKategories.php' ;
                         ?>
                     </select>
                 <!-- na sztywno STAN -->

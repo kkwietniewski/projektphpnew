@@ -10,8 +10,15 @@
         $sortAvailability=$_SESSION['sortAvailability'];
         unset($_SESSION['sortAvailability']); 
 
-        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory' AND stan='$sortAvailability' ORDER BY $sortType";
+        echo $sortType, $sortKategory, $sortAvailability; 
 
+        if ($sortType!="0" && $sortKategory!="0" && $sortAvailability!="0") {
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory' AND stan='$sortAvailability' ORDER BY $sortType";
+        }
+        else if ($sortType=="0" && $sortAvailability=="0" && $sortKategory=="0")
+        {
+            $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id";
+        }
     }
     else {
         $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id";

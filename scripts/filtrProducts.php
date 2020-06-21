@@ -10,7 +10,7 @@
 
     switch ($sortType) {
         case '0':
-            $_SESSION['sortType']=0; 
+            $_SESSION['sortType']="0"; 
         break; 
         case 'Cena rosnąco':
             $_SESSION['sortType']="cena";
@@ -43,7 +43,7 @@
 
     switch ($sortAvailability) {
         case '0':
-            $_SESSION['sortAvailability']=0; 
+            $_SESSION['sortAvailability']="0"; 
             break;
         case '1':
             $_SESSION['sortAvailability']="Dostępny"; 
@@ -56,7 +56,7 @@
             break;
         
         default:
-            $_SESSION['sortAvailability']=0; 
+            $_SESSION['sortAvailability']="0"; 
             break;
     }
     
