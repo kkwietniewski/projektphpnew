@@ -37,27 +37,10 @@
 
                 <h5 class="card-title p-2 pt-3 ">Informacje o zamówieniu</h5>
             <?php
+                // echo $_POST['orderId'];
                 require_once './scripts/orderInfo.php';
             ?>
-        </div>
-    </div>
-    <div class="col-3 ">
-        <div class="card mb-4 d-flex align-items-center justify-content-cetner">
-                <h5 class="card-title p-2 pt-3 ">Dane kupującego</h5>
-            <ul class="list-group list-group-flush mb-3 bg-light">
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Login:</span>SzeldonKuper</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Imię:</span>Sheldon</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Nazwisko:</span>Cooper</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Email:</span>szeldon@wp.pl</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Ulica:</span>Fizyczna</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Nr domu</span>5</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Kod pocztowy:</span>00-000</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Miasto:</span>Amerykańskie</span></li>
-                
-            </ul>
-        </div>
-    </div>
-    </div>
+        
 
     <div class="row">
         <div class="col-12">
@@ -78,7 +61,6 @@
                             <th scope="col">Producent</th>
                             <th scope="col">Ilość</th>
                             <th scope="col">Cena</th>
-                            <th scope="col">Łączna wartość</th>
                             <th scope="col">Waga</th>
                             <th scope="col"></th>
                         </tr>
