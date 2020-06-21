@@ -162,7 +162,7 @@ button{
     </div>
         <div>
                  <?php
-                    require_once './scripts/listOfProducts.php';
+                    
                     if (isset($_SESSION['error'])) {
                         echo <<<ERROR
                         <div class="container-fluid">
@@ -170,6 +170,8 @@ button{
                         </div>
 ERROR;
                 unset($_SESSION['error']) ;
+                    }else{
+                        require_once './scripts/listOfProducts.php';
                     }
                 ?>
         </div>
