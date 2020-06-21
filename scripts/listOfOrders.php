@@ -39,8 +39,11 @@ TAB;
                 <td scope="row">$row[numer_przesylki]</td>    
                 <td scope="row">$row[faktura_vat]</td>
                 <td scope="row">$row[komentarz]</td>
-                <td scope="row"><a class="btn btn-outline-dark" href="szczegolyZamowienia.php">Podgląd</a></td>
+                <form action="./szczegolyZamowienia.php" method="post">
+                <td scope="row"><button class="btn btn-outline-dark" type="submit">Podgląd</button></td>
             </tr>
+            <input class="rowid" name="orderId" value="$row[id]">
+            </form>
 
 TAB;
     }

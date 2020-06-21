@@ -6,10 +6,8 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
 </head>
 <body>
-
 <nav class="navbar-expand-xl navbar-dark bg-dark p-2 mb-4" >
                     <div class="collapse navbar-collapse" >
                     <div class="menu ">
@@ -36,6 +34,7 @@
     <div class="row">
     <div class="col-9">
     <div class="card mb-4 d-flex align-items-center justify-content-cetner">
+
                 <h5 class="card-title p-2 pt-3 ">Informacje o zamówieniu</h5>
             <ul class="list-group list-group-flush mb-3">
                 <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Login:</span>SzeldonKuper</span></li>
