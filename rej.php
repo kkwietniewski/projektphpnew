@@ -103,6 +103,7 @@
             </div>
         </div>
 		
+		
 		<?php
 			if (isset($_SESSION['e_haslo']))
 			{
