@@ -10,34 +10,37 @@
             height:150px;
             width:150px; 
         }
-    </style>
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav-right {
+  float: right;
+}
+</style>
     <title>Aplikacja do zarządzania sklepem internetowym</title>
 </head>
 <body>
-                <nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
-                    <div class="collapse navbar-collapse " >
-                    <div class="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active">Panel startowy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./asortyment.php">Asortyment</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./dodajProdukt.php">Dodaj produkty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" style="margin-left: 900px" href="scripts/logout.php">Wyloguj Się</a>
-                        </li>
-                        </div>
-                        </div> 
-                    </ul>
-                </nav>
+    <header>
+        <div class="topnav bg-dark">
+            <a class="nav-link disabled" href="./panelStartowy.php">Panel startowy</a>
+            <a class="nav-link text-light" href="./asortyment.php">Asortyment</a>
+            <a class="nav-link text-light" href="./dodajProdukt.php">Dodaj produkty</a>
+            <a class="nav-link text-white" href="./zamowienia.php">Zamówienia</a>
+  <div class="topnav-right">
+    <a class="nav-link text-light" href="./scripts/logout.php">Wyloguj</a>
+  </div>
+</div>
+</header>
+
 <?php
 
 	session_start();

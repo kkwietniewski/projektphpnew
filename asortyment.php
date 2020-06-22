@@ -27,18 +27,18 @@
 
 
         /* Style the navigation menu */
-    .topnav {
+    .filters {
     overflow: hidden;
     background-color: #f0f0f1; 
     position: relative;
 }
 
-.topnav #filter {
+.filters #filter {
   display: none;
   
 }
 
-.topnav a {
+.filters a {
   color: #000000;
   padding: 14px 16px;
   text-decoration: none;
@@ -46,7 +46,7 @@
   display: block;
 }
 
-.topnav a:hover {
+.filters a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -59,33 +59,35 @@ button{
     width:70px; 
     font-size:10px; 
 }
-    </style>
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav-right {
+  float: right;
+}
+</style>
+    <title>Aplikacja do zarządzania sklepem internetowym</title>
 </head>
 <body>
-
-<nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
-                    <div class="collapse navbar-collapse" >
-                    <div class="menu ">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./panelStartowy.php">Panel startowy</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link">Asortyment</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./dodajProdukt.php">Dodaj produkty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" style="margin-left: 900px" href="scripts/logout.php">Wyloguj Się</a>
-                        </li>
-                    </ul>
-                        </div>
-                        </div> 
-</nav>
+    <header>
+        <div class="topnav bg-dark">
+            <a class="nav-link text-light" href="./panelStartowy.php">Panel startowy</a>
+            <a class="nav-link disabled" href="">Asortyment</a>
+            <a class="nav-link text-light" href="./dodajProdukt.php">Dodaj produkty</a>
+            <a class="nav-link text-white" href="./zamowienia.php">Zamówienia</a>
+  <div class="topnav-right">
+    <a class="nav-link text-light" href="./scripts/logout.php">Wyloguj</a>
+  </div>
+</div>
+</header>
 
 <div class="container-fluid">
 
@@ -113,7 +115,7 @@ button{
     <div class="row">
         <div class="col-12 mt-3 mb-4">
         
-            <div class="topnav">
+            <div class="filters">
                 <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
 
             <form action="./scripts/filtrProducts.php" method="post">
