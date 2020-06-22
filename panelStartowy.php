@@ -92,7 +92,7 @@
       
 
         <div class="col-4">
-            <div class="my-3">
+            <div class="my-4">
                 <h5 class="display-5 mb-4">Kończące się produkty</h5>
                 
                 <?php
