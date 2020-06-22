@@ -117,7 +117,7 @@
 		}
 		catch(Exception $e)
 		{
-			echo '<span style="color:red;">Błąd serwera! Przepraszamy za niedogodności i prosimy o rejestrację w innym terminie!</span>';
+			echo '<span style="color:red;">Błąd serwera! </span>';
 			echo '<br />Informacja developerska: '.$e;
 		}
 		
