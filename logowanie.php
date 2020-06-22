@@ -32,7 +32,7 @@
         .card
         {
             width:550px; 
-            height:350px; 
+            height:360px; 
 
         }
         .container-fluid{
@@ -75,9 +75,7 @@
                         <div class="d-block">
                             <a href="rejestracja.php">Nie masz konta? Zarejestruj się!</a>
                         </div>
-                        <div class="d-flex justify-content-end mt-4">
                             <button type="submit" class="btn btn-success">Zaloguj Się</button>
-                        </div>
                     </div>
 	            </form>
             </div>

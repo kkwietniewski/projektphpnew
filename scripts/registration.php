@@ -88,7 +88,7 @@
 				if($how_many_nick>0)
 				{
 					$Good=false;
-					$_SESSION['e_nick']="Istnieje już gracz o takim nicku! Wybierz inny.";
+					$_SESSION['e_nick']="Podany nick jest zajęty. Wybierz inny.";
 				}
 				
 				if ($Good==true)
