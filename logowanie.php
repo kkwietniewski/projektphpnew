@@ -41,8 +41,7 @@
         a:hover{
             text-decoration:none; 
         }
-
-
+     
     </style>
 </head>
 
@@ -54,7 +53,7 @@
 
             <div class="card p-4 bg-light">
                 <div class="card-body mb-4">
-                        <h5 class="card-title display-4 ">Zaloguj Się</h5>
+                        <h5 class="card-title display-4 ">Logowanie</h5>
                 </div>
 
                 <form action="scripts/logIn.php" method="post">
