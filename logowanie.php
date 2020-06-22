@@ -55,7 +55,16 @@
                 <div class="card-body mb-4">
                         <h5 class="card-title display-4 ">Logowanie</h5>
                 </div>
-
+                <?php
+                if(isset($_SESSION['blad'])){
+							echo <<<ERROR
+						<div class="card-body my-4">
+							<div class="alert alert-danger" >$_SESSION[blad]</div>
+						</div>
+ERROR;
+                unset($_SESSION['blad']);
+						}
+                ?>
                 <form action="scripts/logIn.php" method="post">
                     <div class="input-group my-4">
                         <div class="input-group-prepend">
@@ -84,12 +93,6 @@
 
         </div>
 </div>
-
-
-	
-<?php
-	if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
-?>
 
 </body>
 </html>
