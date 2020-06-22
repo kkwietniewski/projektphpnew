@@ -173,11 +173,14 @@ TAB;
                 <form action="./edycjaProduktu.php" method="post">
                 <button type="submit" class="btn btn-outline-info btn-sm" >Edytuj
                 </button>
-                <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
-                </td>
-                </tr>
                 <input class="rowid" name="productId" value="$row[id]">
                 </form>
+                <form action="./scripts/deleteProduct.php" method="post">
+                <button type="submit" class="btn btn-outline-danger btn-sm" >Usuń</button>
+                <input class="rowid" name="productId" value="$row[id]">
+                </form>
+                </td>
+                </tr>
 
 TAB;
     }
