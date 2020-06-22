@@ -44,7 +44,7 @@
 			$_SESSION['e_haslo']="Podane hasła nie są identyczne!";
 		}	
 
-		$haslo_hash = $password1;
+		$haslo_hash = password_hash($password1, PASSWORD_DEFAULT);
 		
 		if (!isset($_POST['regulamin']))
 		{
