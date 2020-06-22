@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     // echo $_POST['e'];
     $_SESSION['productId']=$_POST['productId'];
     if(isset($_SESSION['productId'])){
