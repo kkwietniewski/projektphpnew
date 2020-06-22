@@ -60,18 +60,17 @@
                 </div>
 
                 <form action="" method="post">
-                    <div class="input-group my-4">
+				<div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Login</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Podaj nazwę użytkownika" name='nick'> 
-					 	<?php
+                        <input type="text" class="form-control" placeholder="Podaj nazwe użytkownika"  value="<?php
 						if (isset($_SESSION['front_nick']))
 							{
 								echo $_SESSION['front_nick'];
 								unset($_SESSION['front_nick']);
 							}
-							?> 
+							?>"name="nick" id="nick">
                     </div>  
 					<?php
 			if (isset($_SESSION['e_nick']))
@@ -124,7 +123,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Powtórz hasło</span>
                         </div>
-						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz" value="<?php
+						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz " value="<?php
 						if (isset($_SESSION['front_haslo2']))
 							{
 								echo $_SESSION['front_haslo2'];
