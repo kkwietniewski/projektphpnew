@@ -85,7 +85,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Email</span>
                         </div>
-                        <input type="text" class="form-control"  value="<?php
+                        <input type="text" class="form-control" placeholder="Podaj email"  value="<?php
 						if (isset($_SESSION['front_email']))
 							{
 								echo $_SESSION['front_email'];
@@ -104,7 +104,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Hasło</span>
                         </div>
-                        <input type="password" class="form-control"  value="<?php
+                        <input type="password" class="form-control"  placeholder="Podaj hasło" value="<?php
 						if (isset($_SESSION['front_haslo1']))
 							{
 								echo $_SESSION['front_haslo1'];
@@ -124,7 +124,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Powtórz hasło</span>
                         </div>
-						<input type="password" class="form-control"  value="<?php
+						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz" value="<?php
 						if (isset($_SESSION['front_haslo2']))
 							{
 								echo $_SESSION['front_haslo2'];
@@ -134,11 +134,14 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-baseline mb-3">
-                            <button type="submit" class="btn btn-outline-primary">Logowanie</button>
                             <button type="submit" class="btn btn-success">Zarejestruj się</button>
                         
-                    </div>
+                    
 	            </form>
+				<form action="logowanie.php" method="post">
+				<button type="submit" class="btn btn-outline-primary">Logowanie</button>
+				</form>
+				</div>
             </div>
 
 
