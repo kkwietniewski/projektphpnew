@@ -18,7 +18,6 @@
                 <th scope="col">Sposób dostawy</th>
                 <th scope="col">Numer przesyłki</th>
                 <th scope="col">Faktura VAT</th>
-                <th scope="col">Komentarz</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -38,7 +37,6 @@ TAB;
                 <td scope="row">$row[sposob_dostawy]</td>
                 <td scope="row">$row[numer_przesylki]</td>    
                 <td scope="row">$row[faktura_vat]</td>
-                <td scope="row">$row[komentarz]</td>
                 <form action="./szczegolyZamowienia.php" method="post">
                 <td scope="row"><button class="btn btn-outline-dark" type="submit">Podgląd</button></td>
             </tr>
