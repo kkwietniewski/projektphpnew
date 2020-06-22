@@ -1,6 +1,11 @@
 <?php
     session_start();
     $_SESSION['product_id']=0;
+    if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: logowanie.php');
+		exit();
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">

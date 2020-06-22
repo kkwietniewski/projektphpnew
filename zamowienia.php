@@ -14,7 +14,17 @@
 </style>
 </head>
 <body>
+<?php
 
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: logowanie.php');
+		exit();
+	}
+	
+?>
 <nav class="navbar-expand-xl navbar-dark bg-dark p-2 mb-4" >
 
                     <div class="collapse navbar-collapse" >
