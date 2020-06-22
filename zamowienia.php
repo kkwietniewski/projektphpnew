@@ -11,6 +11,20 @@
     height:1px;
     display: none;
 }
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav-right {
+  float: right;
+}
 </style>
 </head>
 <body>
@@ -25,32 +39,18 @@
 	}
 	
 ?>
-<nav class="navbar-expand-xl navbar-dark bg-dark p-2 mb-4" >
-
-                    <div class="collapse navbar-collapse" >
-                    <div class="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./panelStartowy.php">Panel startowy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./asortyment.php">Asortyment</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./dodajProdukt.php">Dodaj produkty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" >Zamówienia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" style="margin-left: 900px" href="scripts/logout.php">Wyloguj Się</a>
-                        </li>
-                        </div>
-                        </div> 
-                    </ul>
-                </nav>
-
-<div class="container-fluid">
+<header>
+        <div class="topnav bg-dark">
+            <a class="nav-link text-light" href="./panelStartowy.php">Panel startowy</a>
+            <a class="nav-link text-light" href="./asortyment.php">Asortyment</a>
+            <a class="nav-link text-light" href="./dodajProdukt.php">Dodaj produkty</a>
+            <a class="nav-link disabled" href="./zamowienia.php">Zamówienia</a>
+  <div class="topnav-right">
+    <a class="nav-link text-light" href="./scripts/logout.php">Wyloguj</a>
+  </div>
+</div>
+</header>
+<div class="container-fluid my-4">
 <div class="row">
         <div class="col-12">
             <h4>Zamówienia</h4>
