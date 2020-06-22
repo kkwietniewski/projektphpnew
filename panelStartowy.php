@@ -32,7 +32,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link text-danger" href="scripts/logout.php">Wyloguj Się</a>
+                            <a class="nav-link text-danger" style="margin-left: 900px" href="scripts/logout.php">Wyloguj Się</a>
                         </li>
                         </div>
                         </div> 
