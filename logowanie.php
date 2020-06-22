@@ -73,7 +73,7 @@
 
                     <div class="d-flex justify-content-between align-items-baseline">
                         <div class="d-block">
-                            <a href="rejestracja.php">Nie masz konta? Zarejestruj się!</a>
+                            <a href="./scripts/reg.php">Nie masz konta? Zarejestruj się!</a>
                         </div>
                             <button type="submit" class="btn btn-success">Zaloguj Się</button>
                     </div>

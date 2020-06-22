@@ -16,7 +16,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Logowanie</title>
+	<title>Rejestraca</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
        
@@ -57,79 +57,59 @@
             <div class="card p-4 bg-light">
                 <div class="card-body mb-4">
                         <h5 class="card-title display-4 ">Rejestracja</h5>
-                </div>
+				</div>
+						<?php
+						if(isset($_SESSION['e_nick'])){
+							echo <<<ERROR
+						<div class="card-body my-4">
+							<div class="alert alert-danger">$_SESSION[e_nick]</div>
+						</div>
+ERROR;
+						unset($_SESSION['e_nick']);
+						}else if (isset($_SESSION['e_email'])) {
+							echo <<<ERROR
+						<div class="card-body my-4">	
+							<div class="alert alert-danger">$_SESSION[e_email]</div>
+						</div>
+							
+ERROR;
+						unset($_SESSION['e_email']);
+						}else if (isset($_SESSION['e_haslo'])) {
+							echo <<<ERROR
+						<div class="card-body my-4">
+							<div class="alert alert-danger">$_SESSION[e_haslo]</div>
+						</div>
+							
+ERROR;
+						unset($_SESSION['e_haslo']);
+						}
+						?>
+                
 
                 <form action="" method="post">
 				<div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Login</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Podaj nazwe użytkownika"  value="<?php
-						if (isset($_SESSION['front_nick']))
-							{
-								echo $_SESSION['front_nick'];
-								unset($_SESSION['front_nick']);
-							}
-							?>"name="nick" id="nick">
-                    </div>  
-					<?php
-			if (isset($_SESSION['e_nick']))
-			{
-				echo '<div class="error">'.$_SESSION['e_nick'].'</div>';
-				unset($_SESSION['e_nick']);
-			}
-		?>
-          
+                        <input type="text" class="form-control" placeholder="Podaj nazwę użytkownika" name='nick' autocomplete="off">
+                    </div>
                     <div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Email</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Podaj email"  value="<?php
-						if (isset($_SESSION['front_email']))
-							{
-								echo $_SESSION['front_email'];
-								unset($_SESSION['front_email']);
-							}
-							?>"name="email" id="email">
+                        <input type="text" class="form-control" placeholder="Podaj email"name="email" id="email" autocomplete="off">
                     </div>
-					<?php
-			if (isset($_SESSION['e_email']))
-			{
-				echo '<div class="error">'.$_SESSION['e_email'].'</div>';
-				unset($_SESSION['e_email']);
-			}
-		?>
 					<div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Hasło</span>
                         </div>
-                        <input type="password" class="form-control"  placeholder="Podaj hasło" value="<?php
-						if (isset($_SESSION['front_haslo1']))
-							{
-								echo $_SESSION['front_haslo1'];
-								unset($_SESSION['front_haslo1']);
-							}
-							?>"name="haslo1" id="haslo1">
+                        <input type="password" class="form-control"  placeholder="Podaj hasło" name="haslo1" id="haslo1" autocomplete="off">
                     </div>
-					<?php
-			if (isset($_SESSION['e_haslo']))
-			{
-				echo '<div class="error">'.$_SESSION['e_haslo'].'</div>';
-				unset($_SESSION['e_haslo']);
-			}
-		?>
-					
 					<div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Powtórz hasło</span>
                         </div>
-						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz " value="<?php
-						if (isset($_SESSION['front_haslo2']))
-							{
-								echo $_SESSION['front_haslo2'];
-								unset($_SESSION['front_haslo2']);
-							}
-							?>"name="haslo2" id="haslo2">
+						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz" name="haslo2" id="haslo2" autocomplete="off">
                     </div>
 
                     <div class="d-flex justify-content-between align-items-baseline mb-3">
@@ -137,9 +117,8 @@
                         
                     
 	            </form>
-				<form action="logowanie.php" method="post">
-				<button type="submit" class="btn btn-outline-primary">Logowanie</button>
-				</form>
+				
+				<a href="./logowanie.php" class="btn btn-outline-primary">Logowanie</a>
 				</div>
             </div>
 
@@ -147,13 +126,6 @@
 
         </div>
 </div>
-
-
-	
-<?php
-	if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
-?>
-
 </body>
 </html>
 

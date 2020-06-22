@@ -15,7 +15,7 @@
 		if (ctype_alnum($nick)==false)
 		{
 			$Good=false;
-			$_SESSION['e_nick']="Nick może składać się tylko z liter i cyfr (bez polskich znaków)";
+			$_SESSION['e_nick']="Nick może składać się tylko z liter i cyfr";
 		}
 		
 
