@@ -46,18 +46,14 @@
 
 		$haslo_hash = password_hash($password1, PASSWORD_DEFAULT);
 		
-		if (!isset($_POST['regulamin']))
-		{
-			$Good=false;
-			$_SESSION['e_regulamin']="Potwierdź akceptację regulaminu!";
-		}				
+					
 		
 		
 		$_SESSION['front_nick'] = $nick;
 		$_SESSION['front_email'] = $email;
 		$_SESSION['front_haslo1'] = $password1;
 		$_SESSION['front_haslo2'] = $password2;
-		if (isset($_POST['regulamin'])) $_SESSION['front_regulamin'] = true;
+		
 		
 		require_once "connect.php";
 		mysqli_report(MYSQLI_REPORT_STRICT);
