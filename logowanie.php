@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<a href="scripts/registration.php">Rejestracja - załóż darmowe konto!</a>
+<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a>
 	<br /><br />
 	Zaloguj Się<br /><br />
 	
@@ -30,6 +30,7 @@
 		<input type="submit" value="Zaloguj się" />
 	
 	</form>
+	
 	
 <?php
 	if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
