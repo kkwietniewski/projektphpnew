@@ -32,16 +32,36 @@
         .card
         {
             width:550px; 
-            height:360px; 
+            height:400x; 
 
         }
         .container-fluid{
-            height:550px; 
+            height:600px; 
         }
         a:hover{
             text-decoration:none; 
         }
-     
+        .alert{
+            height:25px; 
+            font-size:13px; 
+            margin-top:7px; 
+        }
+        .card-body{
+            margin-top:30px; 
+            margin-bottom:10px; 
+            position:relative; 
+           
+        }
+        .alert{
+            position:absolute; 
+            width:500px; 
+        }
+       form{
+           margin-bottom:20px; 
+       }
+       .input-group-prepend{
+           margin-bottom:10px; 
+       }
     </style>
 </head>
 
@@ -52,21 +72,20 @@
             <div class="col-6 ">
 
             <div class="card p-4 bg-light">
-                <div class="card-body mb-4">
-                        <h5 class="card-title display-4 ">Logowanie</h5>
-                </div>
-                <?php
+            <?php
                 if(isset($_SESSION['blad'])){
 							echo <<<ERROR
-						<div class="card-body my-4">
-							<div class="alert alert-danger" >$_SESSION[blad]</div>
-						</div>
+							<div class="alert alert-danger d-flex align-items-center" >$_SESSION[blad]</div>
 ERROR;
                 unset($_SESSION['blad']);
 						}
                 ?>
+                <div class="card-body">
+                        <h5 class="card-title display-4 ">Logowanie</h5>
+                </div>
+                
                 <form action="scripts/logIn.php" method="post">
-                    <div class="input-group my-4">
+                    <div class="input-group mb-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Login</span>
                         </div>
