@@ -30,8 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="scripts/logout.php">Wyloguj Się</a>
+                            <a class="nav-link text-danger" href="scripts/logout.php">Wyloguj Się</a>
                         </li>
                         </div>
                         </div> 
