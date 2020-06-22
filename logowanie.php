@@ -32,11 +32,11 @@
         .card
         {
             width:550px; 
-            height:400x; 
+            height:410x; 
 
         }
         .container-fluid{
-            height:600px; 
+            height:610px; 
         }
         a:hover{
             text-decoration:none; 
@@ -47,20 +47,21 @@
             margin-top:7px; 
         }
         .card-body{
-            margin-top:30px; 
-            margin-bottom:10px; 
+
+            margin-bottom:40px; 
             position:relative; 
            
         }
         .alert{
             position:absolute; 
+            margin-top:110px;  
             width:500px; 
         }
        form{
            margin-bottom:20px; 
        }
        .input-group-prepend{
-           margin-bottom:10px; 
+           margin-bottom:20x; 
        }
     </style>
 </head>
@@ -71,8 +72,12 @@
         <div class="row d-flex align-items-center">
             <div class="col-6 ">
 
-            <div class="card p-4 bg-light">
-            <?php
+            <div class="card pb-4 pr-4 pl-4 bg-light">
+           
+                <div class="card-body">
+                        <h5 class="card-title display-4 ">Logowanie</h5>
+                </div>
+                <?php
                 if(isset($_SESSION['blad'])){
 							echo <<<ERROR
 							<div class="alert alert-danger d-flex align-items-center" >$_SESSION[blad]</div>
@@ -80,9 +85,6 @@ ERROR;
                 unset($_SESSION['blad']);
 						}
                 ?>
-                <div class="card-body">
-                        <h5 class="card-title display-4 ">Logowanie</h5>
-                </div>
                 
                 <form action="scripts/logIn.php" method="post">
                     <div class="input-group mb-4">
@@ -93,7 +95,7 @@ ERROR;
                     </div>  
           
                     <div class="input-group my-4">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend" style="margin-bottom:20px; ">
                             <span class="input-group-text">Hasło</span>
                         </div>
                         <input type="password" class="form-control"  name="haslo" id="haslo">
