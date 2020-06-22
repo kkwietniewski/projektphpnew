@@ -44,16 +44,28 @@
 				$result->free_result();
 				header('Location: ../panelStartowy.php');
 				}
-				else
+				else if(!empty($_POST['login'])&&!empty($_POST['haslo']))
 				 {
 				
 					$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';					
 					header('Location: ../logowanie.php');
 					}
-			} else
+					else
+					{
+				
+						$_SESSION['blad'] = '<span style="color:red">Uzupełnij dane!</span>';					
+						header('Location: ../logowanie.php');
+						}
+			} else if(!empty($_POST['login'])&&!empty($_POST['haslo']))
+			{
+		   
+			   $_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';					
+			   header('Location: ../logowanie.php');
+			   }
+			else
 			 {
 				
-				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
+				$_SESSION['blad'] = '<span style="color:red">Uzupełnij dane!</span>';
 				
 				header('Location: ../logowanie.php');
 				
