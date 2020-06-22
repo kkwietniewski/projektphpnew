@@ -134,11 +134,11 @@ button{
                 </select>
 
                 <!-- Checkboxy z kategoriami -->
-                <input type="radio" id="bestseller" value="bestseller">
+                <input type="radio" id="bestseller" value="bestseller" name="lbl">
                 <label for="bestseller" class="mr-2">Bestseller</label>
-                <input type="radio" id="nowosc" value="Nowość">
+                <input type="radio" id="nowosc" value="Nowość" name="lbl">
                 <label for="nowosc" class="mr-2">Nowość</label>
-                <input type="radio" id="promocja" value="promocja">
+                <input type="radio" id="promocja" value="promocja" name="lbl">
                 <label for="promocja" class="mr-2">Promocja</label>
 
                 <button class="btn btn-sm btn-outline-secondary ml-4" type="submit">Filtruj</button>

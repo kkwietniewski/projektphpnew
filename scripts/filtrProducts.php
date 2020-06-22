@@ -62,13 +62,13 @@
     }
     switch ($sortLabel) {
         case 'bestseller':
-            $_SESSION['sortLabel']="Bestseller"; 
+            $_SESSION['sortLabel']="bestseller"; 
             break;
          case 'nowosc':
             $_SESSION['sortLabel']="nowosc"; 
             break;
          case 'promocja':
-            $_SESSION['sortLabel']="Promocja"; 
+            $_SESSION['sortLabel']="promocja"; 
             break;
 
     }
