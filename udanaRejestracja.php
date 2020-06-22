@@ -24,7 +24,7 @@
 	if (isset($_SESSION['e_email'])) unset($_SESSION['e_email']);
 	if (isset($_SESSION['e_haslo'])) unset($_SESSION['e_haslo']);
 	if (isset($_SESSION['e_regulamin'])) unset($_SESSION['e_regulamin']);
-	if (isset($_SESSION['e_bot'])) unset($_SESSION['e_bot']);
+	
 	
 ?>
 
