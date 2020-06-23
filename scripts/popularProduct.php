@@ -1,7 +1,7 @@
 <?php
 require_once './scripts/connect.php';
 
-$sql = "SELECT obrazek_url, nazwa, stan, cena, producent FROM produkty LIMIT 3";
+$sql = "SELECT p.obrazek_url, p.nazwa, p.stan, p.cena, p.producent,COUNT(zp.symbol_produktu) AS mostPopular FROM produkty p JOIN zamowione_produkty zp ON p.symbol = zp.symbol_produktu GROUP BY p.nazwa ORDER BY mostPopular DESC LIMIT 4";
 
 $result = mysqli_query($conn, $sql);
 

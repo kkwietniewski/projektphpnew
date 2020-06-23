@@ -115,7 +115,7 @@ ERROR;
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-end mt-4">
-                <button class="btn btn-outline-secondary mr-2">Kolejny produkt</button>
+                <!-- <button class="btn btn-outline-secondary mr-2">Kolejny produkt</button> -->
                 <button type="submit" class="btn btn-success">Dodaj produkty</button>
             </div>
         </div>
