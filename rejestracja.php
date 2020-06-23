@@ -125,7 +125,7 @@ ERROR;
                         <div class="d-block">
                             <a href="./logowanie.php">Masz już konto? Zaloguj się!</a>
                         </div>
-                            <button type="submit" class="btn btn-success">Zaloguj Się</button>
+                            <button type="submit" class="btn btn-success">Zarejestruj się</button>
                     </div>
                     
 	            </form>
