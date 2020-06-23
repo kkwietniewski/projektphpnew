@@ -83,7 +83,14 @@
 							<div class="alert alert-danger d-flex align-items-center" >$_SESSION[blad]</div>
 ERROR;
                 unset($_SESSION['blad']);
-						}
+                        }
+                if (isset($_SESSION['udanarejestracja'])){
+
+                            echo <<<DONE
+							<div class="alert alert-success d-flex align-items-center" >$_SESSION[udanarejestracja]</div>
+DONE;
+                        unset($_SESSION['udanarejestracja']);
+                        }
                 ?>
                 
                 <form action="scripts/logIn.php" method="post">
@@ -105,7 +112,7 @@ ERROR;
                         <div class="d-block">
                             <a href="./scripts/reg.php">Nie masz konta? Zarejestruj się!</a>
                         </div>
-                            <button type="submit" class="btn btn-success">Zaloguj Się</button>
+                            <button type="submit" class="btn btn-success">Zaloguj się </button>
                     </div>
 	            </form>
             </div>
@@ -114,7 +121,20 @@ ERROR;
 
         </div>
 </div>
+<script>
+    let btn = document.querySelector('button');
+    let btnSpan = document.querySelector('button>span');
 
+    // btnSpan.addEventListener('click',function (){
+    //     this.classList.add('spinner-border');
+    //     this.classList.add('spinner-border-sm');
+    // });
+
+    btn.addEventListener('click',function (){
+        this.textContent = 'Ładowanie ...';
+        this.innerHtml = "<h1>aaa</h1>"
+    });
+</script>
 </body>
 </html>
 
