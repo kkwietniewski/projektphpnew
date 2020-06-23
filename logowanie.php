@@ -121,20 +121,7 @@ DONE;
 
         </div>
 </div>
-<script>
-    let btn = document.querySelector('button');
-    let btnSpan = document.querySelector('button>span');
-
-    // btnSpan.addEventListener('click',function (){
-    //     this.classList.add('spinner-border');
-    //     this.classList.add('spinner-border-sm');
-    // });
-
-    btn.addEventListener('click',function (){
-        this.textContent = 'Ładowanie ...';
-        this.innerHtml = "<h1>aaa</h1>"
-    });
-</script>
+<script src="./scripts/btnSubmit.js"></script>
 </body>
 </html>
 

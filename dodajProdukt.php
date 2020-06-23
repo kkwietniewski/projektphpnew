@@ -123,6 +123,6 @@ ERROR;
     </div>
 
 </div>    
-
+<script src="./scripts/btnSubmit.js"></script>
 </body>
 </html>
