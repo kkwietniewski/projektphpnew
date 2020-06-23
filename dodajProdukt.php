@@ -104,7 +104,7 @@ ERROR;
                                 <td scope="row"><input type="text" id="waga" name="waga" placeholder="15kg"></td>
                                 <td scope="row"><input type="text" id="kategoria" name="kategoria" placeholder=""></td>
                                 <td scope="row"><input type="text" id="producent" name="producent" placeholder="Fender"></td>
-                                <td scope="row"><input type="checkbox" id="znacznik" checked></td>
+                                <td scope="row"><input type="checkbox" id="znacznik" name="nowosc" checked></td>
                         </tr>
                         </tbody>
                         <table>
@@ -115,15 +115,14 @@ ERROR;
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-end mt-4">
-                <button class="btn btn-outline-secondary mr-2">Kolejny produkt</button>
+                <!-- <button class="btn btn-outline-secondary mr-2">Kolejny produkt</button> -->
                 <button type="submit" class="btn btn-success">Dodaj produkty</button>
             </div>
         </div>
 </form>
-
     </div>
 
 </div>    
-
+<script src="./scripts/btnSubmit.js"></script>
 </body>
 </html>

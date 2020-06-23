@@ -4,7 +4,6 @@
 
     $id = $_SESSION['productId'];
     $obrazekUrl = $_POST['obrazekUrl'];
-    $symbol = $_POST['symbol'];
     $nazwa = $_POST['nazwa'];
     $producent = $_POST['producent'];
     $cena = $_POST['cena'];

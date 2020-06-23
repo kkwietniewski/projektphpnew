@@ -80,7 +80,14 @@
 							<div class="alert alert-danger d-flex align-items-center" >$_SESSION[blad]</div>
 ERROR;
                 unset($_SESSION['blad']);
-						}
+                        }
+                if (isset($_SESSION['udanarejestracja'])){
+
+                            echo <<<DONE
+							<div class="alert alert-success d-flex align-items-center" >$_SESSION[udanarejestracja]</div>
+DONE;
+                        unset($_SESSION['udanarejestracja']);
+                        }
                 ?>
                 
                 <form action="scripts/logIn.php" method="post">
@@ -102,7 +109,7 @@ ERROR;
                         <div class="d-block">
                             <a href="./scripts/reg.php">Nie masz konta? Zarejestruj się!</a>
                         </div>
-                            <button type="submit" class="btn btn-success">Zaloguj Się</button>
+                            <button type="submit" class="btn btn-success">Zaloguj się </button>
                     </div>
 	            </form>
             </div>
@@ -111,7 +118,7 @@ ERROR;
 
         </div>
 </div>
-
+<script src="./scripts/btnSubmit.js"></script>
 </body>
 </html>
 

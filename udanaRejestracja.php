@@ -9,7 +9,9 @@
 	}
 	else
 	{
-		unset($_SESSION['udanarejestracja']);
+		// unset($_SESSION['udanarejestracja']);
+		$_SESSION['udanarejestracja'] = "Zarejestrowano pomyślnie!";
+		header('location: ./logowanie.php');
 	}
 	
 	//Usuwanie zmiennych pamiętających wartości wpisane do formularza
@@ -27,21 +29,3 @@
 	
 	
 ?>
-
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Witamy</title>
-</head>
-
-<body>
-	
-	Dziękujemy za rejestrację w serwisie! Możesz już zalogować się na swoje konto!<br /><br />
-	
-	<a href="logowanie.php">Zaloguj się na swoje konto!</a>
-	<br /><br />
-
-</body>
-</html>
