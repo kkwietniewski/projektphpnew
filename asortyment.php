@@ -146,7 +146,7 @@ button{
                 <!-- Checkboxy z kategoriami -->
                 <input type="radio" id="bestseller" value="bestseller" name="lbl">
                 <label for="bestseller" class="mr-2">Bestseller</label>
-                <input type="radio" id="nowosc" value="Nowość" name="lbl">
+                <input type="radio" id="nowosc" value="nowosc" name="lbl">
                 <label for="nowosc" class="mr-2">Nowość</label>
                 <input type="radio" id="promocja" value="promocja" name="lbl">
                 <label for="promocja" class="mr-2">Promocja</label>
