@@ -67,6 +67,7 @@
 <?php
     require_once './scripts/setProduct.php';
 ?>
+<script src="./scripts/btnSubmit.js"></script>
 
 </body>
 </html>

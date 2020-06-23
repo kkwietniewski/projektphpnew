@@ -41,11 +41,6 @@
         a:hover{
             text-decoration:none; 
         }
-        .alert{
-            height:25px; 
-            font-size:13px; 
-            margin-top:7px; 
-        }
         .card-body{
 
             margin-bottom:40px; 
@@ -56,6 +51,8 @@
             position:absolute; 
             margin-top:110px;  
             width:500px; 
+            height:25px; 
+            font-size:13px; 
         }
        form{
            margin-bottom:20px; 

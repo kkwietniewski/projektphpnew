@@ -10,30 +10,30 @@
 
     echo<<<ORDER
     <ul class="list-group list-group-flush mb-3">
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Id zamówienia:</span>$orderId</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Data:</span>$row[data]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Wartosc:</span>$row[wartosc]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Status:</span>$row[status]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Rozliczenie:</span>$row[rozliczenie]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Typ płatności:</span>$row[typ_platnosci]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Sposób dostawy:</span>$row[sposob_dostawy]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Faktura Vat:</span>$row[faktura_vat]</span></li>
-    <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Komentarz:</span>$row[komentarz]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Id zamówienia:</span>$orderId</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Data:</span>$row[data]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Wartosc:</span>$row[wartosc]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Status:</span>$row[status]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Rozliczenie:</span>$row[rozliczenie]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Typ płatności:</span>$row[typ_platnosci]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Sposób dostawy:</span>$row[sposob_dostawy]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Faktura Vat:</span>$row[faktura_vat]</span></li>
+    <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Komentarz:</span>$row[komentarz]</span></li>
 
     </div>
     </div>
-    <div class="col-3 ">
-        <div class="card mb-4 d-flex align-items-center justify-content-cetner">
+    <div class="col-6 ">
+        <div class="card d-flex align-items-center justify-content-cetner">
                 <h5 class="card-title p-2 pt-3 ">Dane kupującego</h5>
             <ul class="list-group list-group-flush mb-3 bg-light">
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Login:</span>$row[nazwa]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Imię:</span>$row[imie]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Nazwisko:</span>$row[nazwisko]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Email:</span>$row[email]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Adres:</span>$row[adres]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Data utworzenia:</span>$row[data_utworzenia]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Kod pocztowy:</span>$row[kod_pocztowy]</span></li>
-                <li class="list-group-item"><span class="text-muted"><span class="font-weight-bold mr-2">Miasto:</span>$row[miasto]</span></li>
+                <li class="list-group-item d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Login:</span>$row[nazwa]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Imię:</span>$row[imie]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Nazwisko:</span>$row[nazwisko]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Email:</span>$row[email]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Adres:</span>$row[adres]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Data utworzenia:</span>$row[data_utworzenia]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Kod pocztowy:</span>$row[kod_pocztowy]</span></li>
+                <li class="list-group-item  d-flex justify-content-center"><span class="text-muted"><span class="font-weight-bold mr-2">Miasto:</span>$row[miasto]</span></li>
                 
             </ul>
         </div>

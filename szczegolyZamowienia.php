@@ -26,6 +26,14 @@
 .topnav-right {
   float: right;
 }
+
+.card{
+  min-height:520px; 
+}
+
+.list-group-item{
+  min-width:200px; 
+}
 </style>
 </head>
 <body>
@@ -55,9 +63,8 @@
 <div class="container-fluid my-4">
 
     <div class="row">
-    <div class="col-9">
-    <div class="card mb-4 d-flex align-items-center justify-content-cetner">
-
+    <div class="col-6">
+    <div class="card mb-4 d-flex align-items-center justify-content-center">
                 <h5 class="card-title p-2 pt-3 ">Informacje o zamówieniu</h5>
             <?php
                 // echo $_POST['orderId'];

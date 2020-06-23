@@ -32,7 +32,7 @@
         .card
         {
             width:550px; 
-            height:500px; 
+            height:540px; 
 
         }
         .container-fluid{
@@ -41,6 +41,24 @@
         a:hover{
             text-decoration:none; 
         }
+        .card-body{
+
+    margin-bottom:40px; 
+    position:relative; 
+    }
+    .alert{
+    position:absolute; 
+    margin-top:110px;  
+    width:500px; 
+    height:25px; 
+    font-size:13px; 
+    }
+    form{
+    margin-bottom:25px; 
+    }
+    .input-group-prepend{
+    margin-bottom:25x; 
+    }
      
     </style>
 </head>
@@ -61,25 +79,17 @@
 						<?php
 						if(isset($_SESSION['e_nick'])){
 							echo <<<ERROR
-						<div class="card-body my-4">
-							<div class="alert alert-danger">$_SESSION[e_nick]</div>
-						</div>
+							<div class="alert alert-danger d-flex align-items-center">$_SESSION[e_nick]</div>
 ERROR;
 						unset($_SESSION['e_nick']);
 						}else if (isset($_SESSION['e_email'])) {
 							echo <<<ERROR
-						<div class="card-body my-4">	
-							<div class="alert alert-danger">$_SESSION[e_email]</div>
-						</div>
-							
+							<div class="alert alert-danger d-flex align-items-center">$_SESSION[e_email]</div>							
 ERROR;
 						unset($_SESSION['e_email']);
 						}else if (isset($_SESSION['e_haslo'])) {
 							echo <<<ERROR
-						<div class="card-body my-4">
-							<div class="alert alert-danger">$_SESSION[e_haslo]</div>
-						</div>
-							
+							<div class="alert alert-danger d-flex align-items-center">$_SESSION[e_haslo]</div>							
 ERROR;
 						unset($_SESSION['e_haslo']);
 						}
@@ -92,7 +102,7 @@ ERROR;
                             <span class="input-group-text">Login</span>
                         </div>
                         <input type="text" class="form-control" placeholder="Podaj nazwę użytkownika" name='nick' autocomplete="off">
-                    </div>
+                </div>
                     <div class="input-group my-4">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Email</span>
@@ -106,23 +116,23 @@ ERROR;
                         <input type="password" class="form-control"  placeholder="Podaj hasło" name="haslo1" id="haslo1" autocomplete="off">
                     </div>
 					<div class="input-group my-4">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend" style="margin-bottom:20px;">
                             <span class="input-group-text">Powtórz hasło</span>
                         </div>
 						<input type="password" class="form-control" placeholder="Podaj hasło jeszcze raz" name="haslo2" id="haslo2" autocomplete="off">
                     </div>
-
-                    <div class="d-flex justify-content-between align-items-baseline mb-3">
-                            <button type="submit" class="btn btn-success">Zarejestruj się</button>
-                        
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <div class="d-block">
+                            <a href="./logowanie.php">Masz już konto? Zaloguj się!</a>
+                        </div>
+                            <button type="submit" class="btn btn-success">Zaloguj Się</button>
+                    </div>
                     
 	            </form>
-				
-				<a href="./logowanie.php" class="btn btn-outline-primary">Logowanie</a>
-				</div>
+			
             </div>
 
-
+        </div>
 
         </div>
 </div>
