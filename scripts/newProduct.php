@@ -1,5 +1,6 @@
 <?php
     session_start();
+    // $_SESSION['nowosc']=$_POST['nowosc'];
     //    $obrazekUrl =  $_POST['obrazek-url'];
     //    echo $obrazekUrl, $_POST['stan'] ;
     if (!empty($_POST['obrazek-url'])&&!empty($_POST['symbol'])&&!empty($_POST['nazwa'])&&!empty($_POST['cena'])&&!empty($_POST['stan'])&&!empty($_POST['waga'])&&!empty($_POST['kategoria'])&&!empty($_POST['producent'])) {
@@ -12,6 +13,11 @@
         $waga = $_POST['waga'];
         $kategoria = $_POST['kategoria'];
         $producent = $_POST['producent'];
+        if ($_POST['nowosc'] == 'on') {
+            $znacznik = 'Nowość';
+        }else{
+            $znacznik = '';
+        }
         
         require_once './connect.php';
 
@@ -32,9 +38,9 @@
             $row = $result->fetch_array(MYSQLI_NUM);
             // echo $row[0];
 
-            $sql = "INSERT INTO produkty (symbol, nazwa, cena, obrazek_url, stan, waga, kategoria, producent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO produkty (symbol, nazwa, cena, obrazek_url, stan, waga, kategoria, producent, znacznik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt=$conn->prepare($sql); 
-            $stmt->bind_param("ssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent) ;
+            $stmt->bind_param("sssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent,$znacznik) ;
 
             if ($stmt->execute()){
                 // echo 'ok';
@@ -58,9 +64,9 @@
                         $result = $stmt->get_result();
                         $row = $result->fetch_array(MYSQLI_NUM);
                 
-                        $sql = "INSERT INTO produkty (symbol, nazwa, cena, obrazek_url, stan, waga, kategoria, producent) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                        $sql = "INSERT INTO produkty (symbol, nazwa, cena, obrazek_url, stan, waga, kategoria, producent, znacznik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
                         $stmt=$conn->prepare($sql); 
-                        $stmt->bind_param("ssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent) ;
+                        $stmt->bind_param("sssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent, $znacznik) ;
                 
                         if ($stmt->execute()){
                             // echo 'ok';

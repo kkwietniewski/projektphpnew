@@ -104,7 +104,7 @@ ERROR;
                                 <td scope="row"><input type="text" id="waga" name="waga" placeholder="15kg"></td>
                                 <td scope="row"><input type="text" id="kategoria" name="kategoria" placeholder=""></td>
                                 <td scope="row"><input type="text" id="producent" name="producent" placeholder="Fender"></td>
-                                <td scope="row"><input type="checkbox" id="znacznik" checked></td>
+                                <td scope="row"><input type="checkbox" id="znacznik" name="nowosc" checked></td>
                         </tr>
                         </tbody>
                         <table>
@@ -120,7 +120,6 @@ ERROR;
             </div>
         </div>
 </form>
-
     </div>
 
 </div>    
